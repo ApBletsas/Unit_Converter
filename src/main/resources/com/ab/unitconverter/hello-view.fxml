@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ab5121.bletsas5121.HelloController">
+   <children>
+      <ComboBox fx:id="unitTypeMenu" layoutX="25.0" layoutY="31.0" onAction="#onUnitTypeChange" prefHeight="30.0" prefWidth="450.0" AnchorPane.topAnchor="30.0" />
+      <ComboBox fx:id="leftUnitMenu" layoutX="25.0" layoutY="140.0" onAction="#onLeftUnitMenuChange" prefHeight="30.0" prefWidth="200.0" AnchorPane.bottomAnchor="30.0" />
+      <ComboBox fx:id="rightUnitMenu" layoutX="275.0" layoutY="140.0" onAction="#onRightUnitMenuChange" prefHeight="30.0" prefWidth="200.0" AnchorPane.bottomAnchor="30.0" />
+      <TextField fx:id="leftTextField" layoutX="25.0" layoutY="90.0" onKeyTyped="#onLeftTextFieldChange" prefHeight="50.0" prefWidth="200.0" />
+      <TextField fx:id="rightTextField" layoutX="275.0" layoutY="90.0" onKeyTyped="#onRightTextFieldChange" prefHeight="50.0" prefWidth="200.0" />
+      <Label layoutX="242.0" layoutY="98.0" text="=">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
